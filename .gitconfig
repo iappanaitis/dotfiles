@@ -1,0 +1,13 @@
+[user]
+	name = Ian Appanaitis
+	email = ianappanaitis@gmail.com
+
+[core]
+	editor = nvim
+
+[color]
+	ui = auto
+
+[diff]
+	tool = vimdiff
+

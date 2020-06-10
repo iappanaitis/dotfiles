@@ -16,6 +16,9 @@ set title
 "Show line numbers
 set number
 
+"Set relative line numbers
+set relativenumber
+
 "Hide mode
 set noshowmode
 

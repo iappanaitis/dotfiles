@@ -119,6 +119,9 @@ fi
 # Use nvim as MAN pager
 export MANPAGER="nvim -c 'set ft=man' -"
 
+# Alias tmux force 256 color terminal and enable UTF-8 output
+alias tmux='tmux -2 -u'
+
 # Alias for dotfile bare git repo
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 

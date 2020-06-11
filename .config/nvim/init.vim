@@ -32,15 +32,20 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+"Map leader to space
+let mapleader = "\<Space>"
+
 "Switch buffer keys
 nnoremap <Leader>b :ls<CR>:b
 
-"Enable and configure onedark color
-syntax on
-let g:onedark_hide_endofbuffer=1
+"Enable and configure color scheme 
+set termguicolors
 colorscheme onedark
+let g:onedark_hide_endofbuffer=1
+set background=dark
+syntax on
 
-"Set lightline status bar color and display git branch using vim-fugitive
+"Set lightline color scheme and display git branch using fugitive
 let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ 'active': {
@@ -52,13 +57,9 @@ let g:lightline = {
   \ },
   \ }
 
-"Enable 24-bit color terminal support
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
+"Fugitive keybindings
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gl :Glog<CR>
 

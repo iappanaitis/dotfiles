@@ -7,6 +7,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'jpalardy/vim-slime'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 "List ends here. Plugins become visible to Vim after this call.
 call plug#end()

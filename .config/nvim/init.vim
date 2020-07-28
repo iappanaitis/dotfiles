@@ -40,6 +40,9 @@ let mapleader = "\<Space>"
 "Switch buffer keys
 nnoremap <Leader>b :ls<CR>:b
 
+"Open vertical netrw directory browser
+nnoremap <Leader>v :Vex<CR>
+
 "Enable and configure color scheme 
 set termguicolors
 let g:onedark_hide_endofbuffer=1

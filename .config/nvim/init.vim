@@ -28,7 +28,7 @@ set noshowmode
 set splitbelow
 set splitright
 
-"Split navigation keys
+"Split navigation hotkeys
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -37,7 +37,10 @@ nnoremap <C-H> <C-W><C-H>
 "Map leader to space
 let mapleader = "\<Space>"
 
-"Switch buffer keys
+"Clost current buffer hotkey
+nnoremap <Leader>d :bd<CR>
+
+"Switch buffer hotkey
 nnoremap <Leader>b :ls<CR>:b
 
 "Open vertical netrw directory browser
@@ -61,6 +64,10 @@ let g:lightline = {
   \   'gitbranch': 'FugitiveHead'
   \ },
   \ }
+
+"Formatting for html, css, and js
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 "Fugitive keybindings
 nnoremap <leader>gs :Gstatus<CR>

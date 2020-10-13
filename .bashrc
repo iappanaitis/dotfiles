@@ -125,3 +125,7 @@ alias tmux='tmux -2 -u'
 # Alias for dotfile bare git repo
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+# Alias wireguard status and start/stop
+alias wgstat='systemctl status wg-quick@wg0'
+alias wgstart='sudo systemctl start wg-quick@wg0'
+alias wgstop='sudo systemctl stop wg-quick@wg0'

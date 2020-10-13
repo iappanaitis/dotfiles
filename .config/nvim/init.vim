@@ -53,6 +53,11 @@ set background=dark
 syntax on
 colorscheme onedark
 
+"Use terminal transparency
+highlight Normal     ctermbg=NONE guibg=NONE
+highlight LineNr     ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
+
 "Set lightline color scheme and display git branch using fugitive
 let g:lightline = {
   \ 'colorscheme': 'onedark',

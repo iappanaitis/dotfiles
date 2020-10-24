@@ -29,5 +29,5 @@ fi
 # Add Rust to PATH 
 export PATH="$PATH:$HOME/.cargo/bin"
 
-# Add Go to path
+# Add Go to PATH
 export PATH="$PATH:/usr/local/go/bin"

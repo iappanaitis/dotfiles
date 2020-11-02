@@ -8,6 +8,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'hashivim/vim-terraform'
 
 "List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -37,7 +38,7 @@ nnoremap <C-H> <C-W><C-H>
 "Map leader to space
 let mapleader = "\<Space>"
 
-"Clost current buffer hotkey
+"Close current buffer hotkey
 nnoremap <Leader>d :bd<CR>
 
 "Switch buffer hotkey

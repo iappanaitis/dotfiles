@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'jpalardy/vim-slime'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
